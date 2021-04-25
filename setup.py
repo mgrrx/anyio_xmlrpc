@@ -21,6 +21,6 @@ setup(
     zip_safe=False,
     package_data={"anyio_xmlrpc": ["py.typed", "xmlrpc.rng"]},
     packages=find_packages(exclude=("tests",)),
-    install_requires=("asks", "xmlrpcproto"),
+    install_requires=("anyio", "asks", "h11", "xmlrpcproto"),
     python_requires=">=3.5",
 )
